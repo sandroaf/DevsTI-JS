@@ -33,17 +33,17 @@ function Operacao(op) {
     let valor2 = 0;
     let resultado = "";
 
-    valor1 = parseFloat(window.prompt("Informe o primeiro Valor"));
-    valor2 = parseFloat(window.prompt("Informe o segundo Valor"));
+    valor1 = parseFloat(document.querySelector('#valor1').value);
+    valor2 = parseFloat(document.querySelector('#valor2').value);
     if (op == "Somar") {
        resultado = "A soma de "+valor1+" + "+valor2+" é igual a: "+Soma(valor1,valor2);
     } else if (op == "Subtrair") {
-        resultado = "A subtração de"+valor1+" - "+valor2+" é igual a: "+Subtrair(valor1,valor2);
+        resultado = "A subtração de "+valor1+" - "+valor2+" é igual a: "+Subtrair(valor1,valor2);
     } else if (op == "Multiplicar") {
-        resultado = "A multiplicação entre"+valor1+" e "+valor2+" é igual a: "+Multiplicar(valor1,valor2);
+        resultado = "A multiplicação entre "+valor1+" e "+valor2+" é igual a: "+Multiplicar(valor1,valor2);
     } else if (op == "Dividir") {
         resultado = "A Divisão de "+valor1+" por "+valor2+" é igual a: "+Dividir(valor1,valor2);
     }
-    alert(resultado);
+    document.querySelector('#resultado').innerHTML = resultado;
 }
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar ...</title>
+    <script language="JavaScript">
+        function mudaTitulo() {
+            document.title = document.querySelector("#titulo").value;
+        } 
+        function mudaCor() {
+            document.bgColor = document.querySelector("#cor").value;
+        }
+        function mudaCorTexto() {
+            document.body.style.color = document.querySelector("#cortexto").value;
+        }
+        
+    </script>
+</head>
+<body>
+    <label for="titulo">Digite um Título</label>
+    <input type="text" id="titulo" value="" size="60" placeholder="Digite um titulo para a pagina" onchange="mudaTitulo()">
+    <br>
+    <label for="cor">Selecione a Cor da página</label>
+    <input type="color" id="cor" value="#ffffff"
+    onchange="mudaCor()">
+    <br>
+    <label for="corfonte">Selecione a Cor da texto</label>
+    <input type="color" id="cortexto" value="#000000"
+    onchange="mudaCorTexto()">
+
+</body>
+</html>
