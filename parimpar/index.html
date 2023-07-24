@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par e ímpar</title>
+    <script language="JavaScript">         
+       let numero = parseInt(window.prompt("Informe número (-1 sair):"));
+       while (numero != -1) {
+           let resultado = numero % 2; //Operador % (mod) retorna o resto da divisão.
+           if (resultado != 0) //ímpar
+           { 
+              window.alert(numero+" é ímpar"); 
+           } else {
+              window.alert(numero+" é par"); 
+           } 
+           numero = parseInt(window.prompt("Informe número (-1 sair):"));
+        }
+    </script>
+</head>
+<body>    
+</body>
+</html>
