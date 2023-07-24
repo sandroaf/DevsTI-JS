@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Maioridade</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="maioridade.js"></script>
+</head>
+<body>
+    <h2>Aplicação Verificação de Maioridade</h2>
+    <form action="#" method="get" onsubmit="fMaioridade()">
+        <label for="iNome">Nome: </label>
+        <input type="text" id="iNome" size="40" placeholder="Informe seu nome..." required>
+        <br>
+        <label for="iIdade">Idade: </label>
+        <input type="number" id="iIdade" size="4" required>
+        <br>
+        <br>
+        <button type="submit" id="bVerificar">Verificar</button>
+        <br>
+        <br>
+        <div id="dResultado"></div>
+    </form>
+</body>
+</html>
