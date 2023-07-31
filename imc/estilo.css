@@ -1,0 +1,39 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div#conteudo {
+    width: 600px;
+    display: block;
+    margin: 10px auto;
+    align-content: center;
+    padding: 10px;
+    border: 1px rgb(70, 70, 195) dashed;
+}
+
+h1 {
+   color: rgb(55, 55, 103);
+   text-align: center;
+}
+
+label {
+    color:rgb(55, 55, 103);
+    width: 140px;
+    display: inline-block;
+    margin: 5px;
+}
+
+input {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid darkblue;
+    margin: 5px;
+}
+
+button {
+    background-color: darkkhaki;
+    width: 100px;
+    padding: 3px;
+    margin: 5px auto;    
+    box-shadow: 5px 5px gray;
+    display: block;
+}

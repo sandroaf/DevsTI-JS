@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Arquivo de front do meu site de cáçculo do iMC -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cálculo IMC</title>
+    <script src="imc.js"></script>
+</head>
+<body>
+    <div id="conteudo">
+        <h1>Cálculo IMC</h1>    
+        <br>
+        <form action="#" methed="get" onsubmit="fImc()">
+            <!-- formulário html com dados de entrada para a 
+            aplicação. -->
+            <label for="iNome">Nome</label>
+            <input type="text" id="iNome">
+            <br>
+            <label for="iPeso">Peso (em kg)</label>
+            <input type="number" id="iPeso" step="0.01">
+            <br>
+            <label for="iAltura">Altura (em metros)</label>
+            <input type="number" id="iAltura" step="0.01">
+            <br>
+            <br>
+            <button type="submit">Calcular IMC</button>
+            <br>
+            <br>
+            <div id="dResultado">Resultado ...</div>
+        </form>
+    </div>
+</body>
+</html>

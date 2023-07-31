@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cálculo Viagem</title>
+    <script src="viagem.js"></script>
+</head>
+<body>
+    <div id="conteudo">
+        <h1>Cálculo de Viagem</h1>
+        <form action="#" method="get" onsubmit="fCalculaViagem()">
+            <label for="iViagem">Viagem</label>
+            <input id="iViagem" type="text">
+            <br>
+            <label for="iKm">Km percorridos</label>
+            <input id="iKm" type="number" step="0.50">
+            <br>
+            <label for="iLitros">Litros de Combustível</label>
+            <input id="iLitros" type="number" step="0.50">
+            <br>
+            <label for="iValorLitro">Valor por Litro</label>
+            <input id="iValorLitro" type="number" step="0.50">
+            <br>
+            <br>
+            <button type="submit">Calcular Viagem</button>
+            <br>
+            <br>
+            <div id="dResultado">... dados viagem ...</div>
+        </form>
+    </div>
+</body>
+</html>
