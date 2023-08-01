@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <script language="JavaScript">
+        function fCalculaArea () {
+            const vlargura = parseFloat(document.querySelector("#iLargura").value);
+            const vcomprimento = parseFloat(document.querySelector("#iComprimento").value);
+            const varea = vlargura * vcomprimento;
+            return varea;
+        }
+
+        function fOrdena () {
+            const vN1 = parseFloat(document.querySelector("#iN1").value);
+            const vN2 = parseFloat(document.querySelector("#iN2").value);
+            const vN3 = parseFloat(document.querySelector("#iN3").value);
+            let menor, meio, maior = 0;
+            if (vN1 > vN2) {
+               menor = vN2;
+               maior = vN1;
+            } else {
+                menor = vN1;
+                maior = vN2; 
+            }
+            if (maior > vN3) {
+               if (menor > vN3) {
+                  meio = menor;
+                  menor = vN3;
+               }  else {
+                  meio = vN3;
+               }
+            } else {
+                meio = maior;
+                maior = vN3;
+            }
+            document.querySelector("#tOrdem").value = menor+"\n"+meio+"\n"+maior;
+        }
+        function fMediaResultado() {
+            const vNota1 = parseFloat(document.querySelector("#iNota1").value);
+            const vNota2 = parseFloat(document.querySelector("#iNota2").value);
+            const vNota3 = parseFloat(document.querySelector("#iNota3").value);
+            let media = ((vNota1 + vNota2 + vNota3)/3).toFixed(2);
+            let resultado = '';
+            if (media >= 7) {
+                resultado = "Aprovado";
+            } else {
+                resultado = "Reprovado";
+            }
+            document.querySelector("#dResultado").innerHTML = "Média: "+media+"<br>"+resultado;
+        }
+
+    </script>
+</head>
+<body>
+    <p>1. Implementar uma rotina em em um site que ao receber a largura e o comprimento de um terreno informe a área desse terreno.</p>
+    <h3>Terreno</h3>
+    <label for="iLargura">Largura</label>
+    <input type="number" id="iLargura"><br>
+    <label for="iComprimento">Comprimento</label>
+    <input type="number" id="iComprimento">
+    <br><br>
+    <button onclick="document.querySelector('#iArea').value = fCalculaArea()">Calcular Área</button>
+    <br><br>
+    <label for="iArea">Área</label>
+    <input type="number" id="iArea" readonly>
+
+    <hr>
+    <p>2. Faça um programa que leia 3 números e informe esses números em sequência mostrando do menor para o maior. </p>
+    <h3>Ordena 3 Números</h3>
+    <label for="iN1">Informe três números:</label>
+    <input id="iN1"> | <input id="iN2"> | <input id="iN3">
+    <br><br>
+    <button onclick="fOrdena()">Ordenar Números</button>
+    <br><br>
+    Números em ordem:<br>
+    <textarea id="tOrdem" rows="4" readonly>...</textarea>
+
+    <hr>
+    <p>3. Faça um programa que informe 3 notas de um aluno e informe se ele foi aprovado ou reprovado. Média maior que 7 Aprovado!</p>
+    <h3>Média Aluno</h3>
+    <label for="iNota1">Informe as três notas do aluno:</label>
+    <input id="iNota1"> | <input id="iNota2"> | <input id="iNota3">
+    <br><br>
+    <button onclick="fMediaResultado()">Média e Resultado</button>
+    <br><br>
+    Média e Resultado:<br>
+    <div id="dResultado"></div>
+
+</body>
+</html>

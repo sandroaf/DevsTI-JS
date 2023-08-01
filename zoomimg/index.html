@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Imagem</title>
+    <style>
+        img {
+            width: 30%;
+            height: auto;
+        }
+    </style>
+    <script language="JavaScript">
+        function fZoom() {
+            img = document.querySelector("img");
+            zoom = document.querySelector("input").value;
+            document.querySelector("label").innerText = zoom+"%";
+            img.style.width = zoom+"%";
+        }
+    </script>
+</head>
+    zoom: 
+    <input type="range" min="10" max="200" value="30" onchange="fZoom()">
+    <label>30%</label>
+    <br>
+    <img src="everest.jpg" >
+<body>
+    
+</body>
+</html>

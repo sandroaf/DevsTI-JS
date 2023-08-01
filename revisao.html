@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+    <!-- inserção de script dentro do próprio HTML -->
+    <script language="JavaScript">
+       let nome = "";
+       nome = window.prompt("Qual seu nome?");
+       document.write("<textarea>"+nome+"</textarea>"); 
+    </script>
+    <br>
+    <!-- insersão do Javascript no onclick do Botão, isso é 
+    diretamente dentro de um atributo/evento de uma TAG HTML-->
+    <button onclick="document.querySelector('#dNumero').innerHTML 
+    = document.querySelector('textarea').value.length">
+        Conta Caracteres
+    </button>
+    <button onclick="document.querySelector('textarea').value = ''">Limpar Texto</button>
+    <div id="dNumero"></div>
+</body>
+</html>
