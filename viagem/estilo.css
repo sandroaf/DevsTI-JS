@@ -9,6 +9,7 @@ div#conteudo {
     align-content: center;
     padding: 10px;
     border: 1px rgb(70, 70, 195) dashed;
+    background-color: bisque;
 }
 
 h1 {
